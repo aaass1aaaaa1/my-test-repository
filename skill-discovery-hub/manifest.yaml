@@ -1,0 +1,73 @@
+# WorkBuddy 技能上架清单
+# 技能发现与安装中枢（skill-discovery-hub）
+
+# 技能标识，kebab-case，必须与 SKILL.md 的 name 和目录名完全一致
+name: skill-discovery-hub
+
+# 市场 URL 标识，小写字母 + 连字符
+slug: skill-discovery-hub
+
+# 版本号，语义化三段纯数字，与 SKILL.md 的 version 保持一致
+version: 1.0.0
+
+# 展示名称
+display_name: 技能发现与安装中枢
+display_name_en: Skill Discovery & Install Hub
+
+# 能力介绍，与 SKILL.md 的 description 保持一致
+description: 技能市场的一站式发现与安装中枢：输入一句需求，输出候选清单与推荐理由，经用户确认后完成安装。适用场景：按关键词或分类检索技能；多个候选时按质量标准选型；安装前查重与重叠检测；判断「如何做 X」是否有现成技能。触发词：找个技能、搜一下 skill、有没有做 X 的技能、按分类看技能、推荐一个技能、该装哪个技能、这个技能靠谱吗、怎么找技能、装这个技能、安装技能、技能选型、技能查重。
+description_zh: 技能市场的一站式发现与安装中枢：检索、选型、查重、安装，一个技能全包。
+description_en: One-stop hub for discovering, evaluating, and installing marketplace skills: search by keyword or category, select by quality criteria, check for overlap, and install with user confirmation.
+
+# 作者或合作方名称
+author: 憨憨
+
+# 市场类目
+category: 效率工具
+
+# 许可证
+license: MIT
+
+# 标签，用于检索
+tags:
+  - 技能检索
+  - 技能安装
+  - 技能选型
+  - 效率工具
+
+# 触发词，与 description 第三段保持一致，便于市场检索
+triggers:
+  - 找个技能
+  - 搜一下 skill
+  - 有没有做 X 的技能
+  - 按分类看技能
+  - 推荐一个技能
+  - 该装哪个技能
+  - 这个技能靠谱吗
+  - 怎么找技能
+  - 装这个技能
+  - 安装技能
+  - 技能选型
+  - 技能查重
+
+# 推荐问题（试试这样问我），2-5 条，中英各一套
+examples_zh:
+  - 找个处理 PDF 的技能
+  - 按分类看看有哪些办公效率类技能
+  - 自我改进类的技能该装哪个？
+  - 这个技能靠谱吗？
+examples_en:
+  - Find a skill for processing PDF files
+  - Browse productivity skills by category
+  - Which self-improvement skill should I install?
+  - Is this skill trustworthy?
+
+# 运行环境要求（可选）
+compatibility: 依赖 search_and_install_skills 工具（或 workbuddy_marketplace_skill 市场接口）
+
+# 素材清单（提交前核对）
+# [ ] 头像 512×512，≤500KB，JPG/PNG
+# [ ] 技能包总大小 ≤3MB
+# [ ] SKILL.md 正文 ≤64KB
+# [ ] 已通过 scripts/validate_skill.py 校验
+# [ ] 无硬编码密钥、无数据外泄指令、无越权命令

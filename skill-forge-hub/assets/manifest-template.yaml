@@ -1,0 +1,64 @@
+# WorkBuddy 技能上架清单模板
+# 使用说明：复制本文件到技能根目录，替换所有 <> 占位符后随 zip 一起提交
+
+# 技能标识，kebab-case，必须与 SKILL.md 的 name 和目录名完全一致
+name: <your-skill-name>
+
+# 市场 URL 标识，小写字母 + 连字符
+slug: <your-skill-name>
+
+# 版本号，语义化三段纯数字，与 SKILL.md 的 version 保持一致
+version: 1.0.0
+
+# 展示名称
+display_name: <中文展示名>
+display_name_en: <English Display Name>
+
+# 能力介绍，与 SKILL.md 的 description 保持一致
+description: <核心能力 + 适用场景 + 触发词>
+description_zh: <中文能力介绍>
+description_en: <English capability description>
+
+# 作者或合作方名称
+author: <作者或合作方名称>
+
+# 市场类目
+category: <类目，如 效率工具>
+
+# 许可证
+license: MIT
+
+# 标签，用于检索
+tags:
+  - <标签1>
+  - <标签2>
+  - <标签3>
+
+# 触发词，与 description 第三段保持一致，便于市场检索
+triggers:
+  - <触发词1>
+  - <触发词2>
+  - <触发词3>
+  - <触发词4>
+  - <触发词5>
+  - <触发词6>
+
+# 推荐问题（试试这样问我），2-5 条，中英各一套
+examples_zh:
+  - <示例问题1>
+  - <示例问题2>
+  - <示例问题3>
+examples_en:
+  - <Example question 1>
+  - <Example question 2>
+  - <Example question 3>
+
+# 运行环境要求（可选）
+# compatibility: 需要 Python 3.8+，需要网络访问
+
+# 素材清单（提交前核对）
+# [ ] 头像 512×512，≤500KB，JPG/PNG
+# [ ] 技能包总大小 ≤3MB
+# [ ] SKILL.md 正文 ≤64KB
+# [ ] 已通过 scripts/validate_skill.py 校验
+# [ ] 无硬编码密钥、无数据外泄指令、无越权命令

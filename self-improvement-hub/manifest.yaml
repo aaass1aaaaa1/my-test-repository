@@ -1,0 +1,30 @@
+# 上架清单：自我改进中枢
+name: self-improvement-hub
+display_name: 自我改进中枢
+version: 1.0.0
+author: 憨憨
+category: 效率工具
+
+# 能力介绍，与 SKILL.md 的 description 保持一致
+description: 自我改进中枢：捕获学习、错误与用户纠正，维护可追溯的经验账本，支持晋升项目记忆、提取为技能、每日一项的节奏化改进。适用场景：命令或操作失败后记录排障经验；被用户纠正时固化正确做法；发现重复出现的错误模式；把多次验证的经验沉淀为项目规则或独立技能；建立每天挑一项改进的稳定节奏。触发词：自我改进、总结经验、记一下这个错误、又踩坑了、以后注意、经验沉淀、提取为技能、每日改进、改进待办、复盘、学习记录。
+
+description_zh: 自我改进中枢——捕获学习/错误/纠正，维护经验账本，支持晋升、提取技能与每日节奏化改进。
+description_en: Self-improvement hub: captures learnings, errors and corrections into a traceable ledger, with promotion to project memory, skill extraction, and a daily one-item improvement loop.
+
+dependencies: []
+risk_level: L1
+risk_note: 涉及读写本地账本文件与（经确认后）写入项目记忆；无网络请求、无凭据操作。
+
+files:
+  - SKILL.md
+  - manifest.yaml
+  - references/learning-formats.md
+  - references/promotion-and-extraction.md
+  - references/improvement-backlog.md
+  - references/confidence-gating.md
+
+trigger_examples:
+  - "把这个错误记一下，以后别再犯"
+  - "刚才那个方案不对，记下来正确做法"
+  - "这个坑踩了三次了，提取成技能吧"
+  - "今天该改进什么？从待办里挑一项"

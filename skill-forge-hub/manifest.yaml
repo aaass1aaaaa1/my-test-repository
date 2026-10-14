@@ -1,0 +1,36 @@
+# 上架清单：技能锻造中枢
+name: skill-forge-hub
+display_name: 技能锻造中枢
+version: 1.0.0
+author: 憨憨
+category: 效率工具
+
+# 能力介绍，与 SKILL.md 的 description 保持一致
+description: 技能锻造中枢：从 0 到 1 创建可上架技能、给已有技能做体检与结构化改写、把粗糙提示词打磨成可靠指令。适用场景：从零封装重复工作流为技能；已有技能太胖太散或触发不准，需要优化；评估技能质量前先对齐标准；打磨提示词或判断提示词该封装成技能。触发词：创建技能、做个 skill、写个 SKILL.md、封装流程、优化技能、技能体检、技能诊断、改写 SKILL.md、命中率不高、触发不准、优化提示词、打磨 prompt、上架技能。
+
+description_zh: 技能锻造中枢——创建、体检、改写、打磨提示词的单一入口，产物遵循市场规范并强制自检。
+description_en: Skill forge hub: one entry for creating, auditing, refactoring skills and refining prompts, with market-spec compliance and mandatory validation.
+
+dependencies: []
+risk_level: L1
+risk_note: 仅读写本地技能文件与运行自带校验脚本；无网络请求、无凭据操作。
+
+files:
+  - SKILL.md
+  - manifest.yaml
+  - assets/SKILL-template.md
+  - assets/manifest-template.yaml
+  - assets/audit-report-template.md
+  - scripts/validate_skill.py
+  - references/workbuddy-market-spec.md
+  - references/creation-workflow.md
+  - references/description-crafting.md
+  - references/optimization-audit.md
+  - references/prompt-optimization.md
+  - references/evaluation-protocol.md
+
+trigger_examples:
+  - "把咱们这套检索流程封装成一个技能"
+  - "这个技能 600 行太胖了，帮我重构"
+  - "这段提示词效果不稳定，帮我打磨"
+  - "评估一下这个技能到底好不好用"
